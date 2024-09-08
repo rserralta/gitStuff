@@ -1,0 +1,45 @@
+
+
+			****************************
+
+-./example:
+	--Test Case #0:
+STDIN:[
+This is a simple example with 8 words.
+]
+CLAs:[./bucketsort ]
+STDOUT:[
+bucketsort: Fatal error! There must be at-least one CLA.
+
+]
+	--Test Case #1:
+STDIN:[
+This is a simple example with 8 words.
+]
+CLAs:[./bucketsort strawberry blackberry ]
+STDOUT:[
+bucketsort: Fatal error! CLAs must be entered in alphabetical order
+
+]
+	--Test Case #2:
+STDIN:[
+This is a simple example with 8 words.
+]
+CLAs:[./bucketsort apple carrot kiwi pineapple watermelon ]
+STDOUT:[
+bucket 0: 8 a
+bucket 2: example is
+bucket 4: simple This
+bucket 5: with words.
+
+]
+	--Test Case #3:
+STDIN:[
+I'd rather go shopping than go to the gym!
+]
+CLAs:[./bucketsort mango ]
+STDOUT:[
+bucket 0: go go gym! I'd
+bucket 1: rather shopping than the to
+
+]
